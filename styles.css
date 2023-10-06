@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+
+* {
+    font-family: 'Gabarito','Oswald', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    align-items: center;
+    background: linear-gradient(45deg, #0a3f95, #3677df, #70e2ff);
+    justify-content: center;
+    display: flex;
+    height: inherit;
+}
+
+.calc {
+    display: inline-block;
+    font-size: 24px;
+    background: rgba(255, 254, 254, 0.605);
+    border-radius: 20px;
+    box-shadow: 0px 10px 100px 0 rgba(0, 0, 0, 0.598);
+    width: 350px;
+    height: auto;
+    padding: 20px;
+}
+
+.calc__screen {
+    background: #fff9;
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+    padding: 5px 10px;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.calc__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
+.calc__button--row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.calc__button {
+    border: 0;
+    border-radius: 10px;
+    flex-basis: 20%;   
+    font-size: 24px;
+    height: 3rem;
+    transition: filter .2s;
+} 
+
+.calc__button:hover {
+    filter: brightness(90%);
+    transition: filter .2s;
+}
+
+.calc__button--double {
+    flex-basis: 47%;
+}
+
+.calc__button--triple {
+    flex-basis: 73%;
+} 
+
+.calc__button:last-child {
+    background: linear-gradient(-215deg, #3db4fe, #0064ad);
+}
